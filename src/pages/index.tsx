@@ -7,6 +7,7 @@ import Heading from "@theme/Heading";
 
 import styles from "./index.module.css";
 import Me_About from "../components/me/about/about";
+import { Statistic } from "antd";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -22,6 +23,10 @@ function HomepageHeader() {
             Let`s connect in LinkedIn <img src="img/linkedin.webp" style={{ width: "20px" }} />
           </Link>
         </div>
+        <br />
+        <i>12+ years experience</i>
+        <br />
+        <i>Open to relocation to USA / Europe</i>
       </div>
     </header>
   );
