@@ -13,12 +13,10 @@ rm -rf ./cv
 git clone git@github.com:VictorTrapenok/cv.git -b gh-pages
 
 mv ./cv/.git ./build
+rm -rf ./cv
+cd build
 git add .
 git commit -m "Deploy"
 git push
-# mkdir /tmp/viktor-t
-# cd /tmp/viktor-t
-# cp -r ./build /tmp/viktor-t
-# cp CNAME /tmp/viktor-t
 
-# cd /tmp/viktor-t
+echo "Deploy done"
