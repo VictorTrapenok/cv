@@ -13,7 +13,7 @@ git clone git@github.com:VictorTrapenok/cv.git -b gh-pages
 mv ./cv/.git ./build
 rm -rf ./cv
 cd build
-echo "viktor-t.com" >/build/CNAME
+echo "viktor-t.com" >CNAME
 git add .
 git commit -m "Deploy"
 git push
