@@ -28,7 +28,7 @@ export default function Me_About(): JSX.Element {
           items={[
             {
               color: "green",
-              dot: <img src={`img/logo192.png`} style={{ width: "30px" }} />,
+              dot: <img src={`img/logo192.jpeg`} style={{ width: "30px" }} />,
               children: (
                 <>
                   <h3>Principal Engineer @ Nanoheal</h3>
@@ -153,7 +153,7 @@ export default function Me_About(): JSX.Element {
             </a>,
             <a target="_blank" href="https://www.linkedin.com/in/victor-trapenok/">
               <Button key="buy" size="large">
-                Connect in linkedin
+                Connect in linkedin <img src="img/linkedin.webp" style={{ width: "20px" }} />
               </Button>
             </a>,
           ]}
