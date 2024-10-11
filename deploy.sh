@@ -19,4 +19,6 @@ git add .
 git commit -m "Deploy"
 git push
 
+cd ..
+rm -rf ./build
 echo "Deploy done"
