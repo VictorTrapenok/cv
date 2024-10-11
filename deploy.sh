@@ -6,7 +6,7 @@ npm run build
 
 echo "Build done"
 
-cp CNAME /build/CNAME
+echo "viktor-t.com" >/build/CNAME
 
 rm -rf ./cv
 
