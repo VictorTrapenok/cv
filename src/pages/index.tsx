@@ -26,7 +26,7 @@ function HomepageHeader() {
         <br />
         <i>12+ years experience</i>
         <br />
-        <i>Open to relocation to USA / Europe</i>
+        <i>Open to relocation</i>
       </div>
     </header>
   );
