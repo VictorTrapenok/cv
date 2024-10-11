@@ -5,6 +5,7 @@ export default function Me_About(): JSX.Element {
     <div
       style={{
         textAlign: "center",
+        padding: "20px",
       }}
     >
       <div
