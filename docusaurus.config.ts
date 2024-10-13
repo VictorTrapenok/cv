@@ -85,8 +85,8 @@ const config: Config = {
         {
           type: "html",
           position: "right",
-          value: `<a onClick="window.linkedInConversionAndGo(event)"
-          href="#" target="_blank" rel="noopener noreferrer"
+          value: `<a onClick="window.gtag_report_conversion('https://www.linkedin.com/in/victor-trapenok/'); return false;"
+          href="https://www.linkedin.com/in/victor-trapenok/" target="_blank" rel="noopener noreferrer"
            class="navbar__item navbar__link">LinkedIn<svg 
            width="13.5" height="13.5" aria-hidden="true" 
            viewBox="0 0 24 24" 
