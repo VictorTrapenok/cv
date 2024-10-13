@@ -17,7 +17,7 @@ rm -rf ./cv
 
 git clone git@github.com:VictorTrapenok/cv.git -b gh-pages
 
-mv ./cv/.git ./build
+mv ./cv/.git ./build/.git
 rm -rf ./cv
 cd build
 echo "viktor-t.com" >CNAME
@@ -25,5 +25,5 @@ git add .
 git commit -m "Deploy"
 git push
 
-rm -rf ./build
+# rm -rf ./build
 echo "Deploy done"
