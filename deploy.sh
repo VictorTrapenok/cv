@@ -4,7 +4,7 @@ echo "Start"
 
 rm -rf ./build
 
-# npm run build
+npm run build
 
 metricsStr=$(cat metrics.html)
 mainStr=$(cat build/index.html)
@@ -25,5 +25,5 @@ git add .
 git commit -m "Deploy"
 git push
 
-# rm -rf ./build
+rm -rf ./build
 echo "Deploy done"
