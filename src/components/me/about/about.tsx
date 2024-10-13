@@ -148,12 +148,12 @@ export default function Me_About(): JSX.Element {
           title="Let's connect"
           subTitle="Thank you for considering my CV. I am open to new opportunities and would love to discuss how I can contribute to your team."
           extra={[
-            <a target="_blank" onClick={calendlyConversionAndGo} href="https://calendly.com/viktor-trapenok">
+            <a target="_blank" onClick={calendlyConversionAndGo} href="#">
               <Button type="primary" size="large">
                 Shedule interview
               </Button>
             </a>,
-            <a target="_blank" onClick={linkedInConversionAndGo} href="https://www.linkedin.com/in/victor-trapenok/">
+            <a target="_blank" onClick={linkedInConversionAndGo} href="#">
               <Button key="buy" size="large">
                 Connect in linkedin <img src="img/linkedin.webp" style={{ width: "20px" }} />
               </Button>
