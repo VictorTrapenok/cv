@@ -38,3 +38,37 @@
   ><div><img src="https://mc.yandex.ru/watch/98611211" style="position: absolute; left: -9999px" alt="" /></div
 ></noscript>
 <!-- /Yandex.Metrika counter -->
+
+<!-- Event snippet for go-to-linkedin conversion page
+In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. -->
+<script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        window.location = url;
+      }
+    };
+    gtag("event", "conversion", {
+      send_to: "AW-16736225408/Lg4ECN2j-9wZEICRuqw-",
+      value: 1.0,
+      currency: "USD",
+      event_callback: callback,
+    });
+    return false;
+  }
+
+  function gtag_report_calendly(url) {
+    var callback = function () {
+      if (typeof url != "undefined") {
+        window.location = url;
+      }
+    };
+    gtag("event", "conversion", {
+      send_to: "AW-16736225408/Bdu9CKmd8twZEICRuqw-",
+      value: 1.1,
+      currency: "USD",
+      event_callback: callback,
+    });
+    return false;
+  }
+</script>

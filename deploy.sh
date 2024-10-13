@@ -2,7 +2,14 @@
 
 echo "Start"
 
-npm run build
+rm -rf ./build
+
+# npm run build
+
+metricsStr=$(cat metrics.html)
+mainStr=$(cat build/index.html)
+
+echo "${mainStr/<\/head>/"$metricsStr</head>"}" >build/index.html
 
 echo "Build done"
 
@@ -18,6 +25,5 @@ git add .
 git commit -m "Deploy"
 git push
 
-cd ..
 rm -rf ./build
 echo "Deploy done"

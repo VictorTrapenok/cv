@@ -8,6 +8,7 @@ import Heading from "@theme/Heading";
 import styles from "./index.module.css";
 import Me_About from "../components/me/about/about";
 import { Statistic } from "antd";
+import { linkedInConversionAndGo } from "../utils/utils";
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -18,7 +19,7 @@ function HomepageHeader() {
           {siteConfig.title}
         </Heading>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
+        <div className={styles.buttons} onClick={linkedInConversionAndGo}>
           <Link className="button button--secondary button--lg" target="_blank" to="https://www.linkedin.com/in/victor-trapenok/">
             Let`s connect in LinkedIn <img src="img/linkedin.webp" style={{ width: "20px" }} />
           </Link>
