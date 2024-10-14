@@ -3,7 +3,7 @@ import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
-  title: "Principal Engineer",
+  title: "I'm searching new remote job",
   tagline: "Full-time / Contract / C2C / Remote",
   favicon: "img/favicon.ico",
 

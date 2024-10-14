@@ -58,3 +58,13 @@ export default function HomepageFeatures(): JSX.Element {
     </section>
   );
 }
+
+export function HomepageSkillsHeader(): JSX.Element {
+  return (
+    <section className={styles.features} style={{ backgroundColor: "#3b84543d", fontSize: "larger", fontWeight: "bold" }}>
+      <div className="container" style={{ textAlign: `center` }}>
+        Excellent skills in DevOps / Full Stack / Cloud engineering
+      </div>
+    </section>
+  );
+}
