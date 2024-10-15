@@ -16,8 +16,8 @@
             <description><![CDATA[logo]]></description>
             <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-8565c1748d24c202d39025a129f25c7c.png" width="1280" height="720" class="img_ev3q"></p>
 <p><em>(To summarize: approximately $8,000)</em></p>
-<p>At the beginning of 2012, I started working on my first open-source project. It was a comet server written in C++.</p>
-<p>The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is <a href="https://pusher.com/" target="_blank" rel="noopener noreferrer">https://pusher.com</a>.</p>
+<p>At the beginning of 2012, I started working on <a href="https://github.com/CppComet/comet-server" target="_blank" rel="noopener noreferrer">my first open-source project</a>. It was a comet server written in C++.</p>
+<p>The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is pusher.com.</p>
 <p>I completed the project and even added more features than I originally planned. In synthetic tests, my server handled up to <strong>64,000 simultaneous connections</strong>. I invested a significant amount of my time — around <strong>2,000 hours of work</strong>, by my estimate.</p>
 <p>The project attracted more than <strong>20,000 registrations</strong>, and about <strong>1,000 websites</strong> actively used my API. However, most of them stayed on the free tier. At its peak, the total number of concurrent WebSocket connections reached <strong>8,000</strong>.</p>
 <p>My largest client was the Russian federal TV channel <strong>OTR</strong>, and I even signed a contract with them for technical support.</p>
