@@ -5,7 +5,7 @@ authors: [viktor]
 tags: [Open-Source, Startup]
 ---
 
-![logo](logo.png)
+![logo](logo.webp)
 
 # How Much Did I Earn from My Open-Source Project Over 12 Years?
 
