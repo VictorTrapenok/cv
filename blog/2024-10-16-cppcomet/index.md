@@ -11,9 +11,9 @@ tags: [Open-Source, Startup]
 
 _(To summarize: approximately $8,000)_
 
-At the beginning of 2012, I started working on my first open-source project. It was a comet server written in C++.
+At the beginning of 2012, I started working on [my first open-source project](https://github.com/CppComet/comet-server). It was a comet server written in C++.
 
-The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is https://pusher.com.
+The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is pusher.com.
 
 I completed the project and even added more features than I originally planned. In synthetic tests, my server handled up to **64,000 simultaneous connections**. I invested a significant amount of my time — around **2,000 hours of work**, by my estimate.
 
