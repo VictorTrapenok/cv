@@ -5,6 +5,8 @@ authors: [viktor]
 tags: [Karpenter, GitLab, Kubernetes]
 ---
 
+![logo](logo.png)
+
 I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.
 
 At Nanoheal, we have a high level of developer activity, and CI/CD pipelines runs a critical role in our DevOps practices for continuous delivery.
