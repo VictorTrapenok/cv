@@ -76,7 +76,7 @@ const config: Config = {
         //   position: "left",
         //   label: "Tutorial",
         // },
-        // { to: "/blog", label: "Blog", position: "left" },
+        { to: "/blog", label: "Blog", position: "left" },
         // {
         //   href: "https://www.linkedin.com/in/victor-trapenok/",
         //   label: "LinkedIn",
@@ -123,19 +123,19 @@ const config: Config = {
             },
           ],
         },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Blog",
-        //       to: "/blog",
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: "https://github.com/facebook/docusaurus",
-        //     },
-        //   ],
-        // },
+        {
+          title: "More",
+          items: [
+            {
+              label: "Blog",
+              to: "/blog",
+            },
+            // {
+            //   label: "GitHub",
+            //   href: "https://github.com/facebook/docusaurus",
+            // },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Trapenok Viktor`,
     },
