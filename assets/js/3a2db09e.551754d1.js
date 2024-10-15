@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkviktor_t=self.webpackChunkviktor_t||[]).push([[121],{8070:e=>{e.exports=JSON.parse('{"tags":[{"label":"Karpenter","permalink":"/blog/tags/karpenter","count":1},{"label":"GitLab","permalink":"/blog/tags/git-lab","count":1},{"label":"Kubernetes","permalink":"/blog/tags/kubernetes","count":1}]}')}}]);

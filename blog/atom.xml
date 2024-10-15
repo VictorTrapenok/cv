@@ -2,18 +2,57 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://viktor-t.com/blog</id>
     <title>I'm searching new remote job Blog</title>
-    <updated>2024-10-15T00:00:00.000Z</updated>
+    <updated>2024-10-16T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://viktor-t.com/blog"/>
     <subtitle>I'm searching new remote job Blog</subtitle>
     <icon>https://viktor-t.com/img/favicon.ico</icon>
     <entry>
+        <title type="html"><![CDATA[12 Years in Open-Source]]></title>
+        <id>https://viktor-t.com/blog/12-Years-in-Open-Source</id>
+        <link href="https://viktor-t.com/blog/12-Years-in-Open-Source"/>
+        <updated>2024-10-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[logo]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-8565c1748d24c202d39025a129f25c7c.png" width="1280" height="720" class="img_ev3q"></p>
+<p><em>(To summarize: approximately $8,000)</em></p>
+<p>At the beginning of 2012, I started working on my first open-source project. It was a comet server written in C++.</p>
+<p>The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is <a href="https://pusher.com/" target="_blank" rel="noopener noreferrer">https://pusher.com</a>.</p>
+<p>I completed the project and even added more features than I originally planned. In synthetic tests, my server handled up to <strong>64,000 simultaneous connections</strong>. I invested a significant amount of my time — around <strong>2,000 hours of work</strong>, by my estimate.</p>
+<p>The project attracted more than <strong>20,000 registrations</strong>, and about <strong>1,000 websites</strong> actively used my API. However, most of them stayed on the free tier. At its peak, the total number of concurrent WebSocket connections reached <strong>8,000</strong>.</p>
+<p>My largest client was the Russian federal TV channel <strong>OTR</strong>, and I even signed a contract with them for technical support.</p>
+<p>But financially, the project was almost a complete failure. I wasn’t able to effectively market my solution. Over nearly <strong>12 years</strong>, the total revenue from subscriptions amounted to about <strong>$8,000</strong> from various users — barely enough to cover hosting costs.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-reasons">The Reasons:<a href="https://viktor-t.com/blog/12-Years-in-Open-Source#the-reasons" class="hash-link" aria-label="Direct link to The Reasons:" title="Direct link to The Reasons:">​</a></h2>
+<ul>
+<li>I did not have experience in marketing (I’ve since learned a lot, but it took time).</li>
+<li>The process from start to paid subscription was too long.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="but-what-else-did-i-gain">But What Else Did I Gain?<a href="https://viktor-t.com/blog/12-Years-in-Open-Source#but-what-else-did-i-gain" class="hash-link" aria-label="Direct link to But What Else Did I Gain?" title="Direct link to But What Else Did I Gain?">​</a></h2>
+<ul>
+<li>I used this project as a topic for my <strong>diploma thesis</strong> at the institute.</li>
+<li>I received <strong>dozens of freelance jobs</strong> for developing chats and video chats.</li>
+<li>Over the years, I talked about this project in <strong>every job interview</strong>, as much as I talked about my other work experience.</li>
+<li>I’m pretty sure this project helped me get a job at <strong>cube.dev</strong>, where I learned a lot.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-indirect-benefits">The Indirect Benefits<a href="https://viktor-t.com/blog/12-Years-in-Open-Source#the-indirect-benefits" class="hash-link" aria-label="Direct link to The Indirect Benefits" title="Direct link to The Indirect Benefits">​</a></h2>
+<p>It’s hard to quantify the indirect benefits. But without this project in my portfolio, how much harder would it have been to find work? How much less would I have been paid in my positions?</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="in-conclusion">In Conclusion:<a href="https://viktor-t.com/blog/12-Years-in-Open-Source#in-conclusion" class="hash-link" aria-label="Direct link to In Conclusion:" title="Direct link to In Conclusion:">​</a></h2>
+<p>For anyone starting their own project, here’s my advice:</p>
+<p><strong>Start!</strong> It’s an amazing experience. But if, like me, you hope to earn from it, <strong>think about marketing and monetization from the start.</strong></p>]]></content>
+        <author>
+            <name>Viktor Trapenok</name>
+            <uri>https://www.linkedin.com/in/victor-trapenok/</uri>
+        </author>
+        <category label="Open-Source" term="Open-Source"/>
+        <category label="Startup" term="Startup"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Reducing CI/CD infrastructure costs]]></title>
         <id>https://viktor-t.com/blog/karpenter-for-gitlabrunner</id>
         <link href="https://viktor-t.com/blog/karpenter-for-gitlabrunner"/>
         <updated>2024-10-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.]]></summary>
-        <content type="html"><![CDATA[<p>I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.</p>
+        <summary type="html"><![CDATA[logo]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e7760206565c65028bffe338aec6a2e7.png" width="721" height="406" class="img_ev3q"></p>
+<p>I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.</p>
 <p>At Nanoheal, we have a high level of developer activity, and CI/CD pipelines runs a critical role in our DevOps practices for continuous delivery.</p>
 <p>Previously, we ran three powerful EC2 virtual machines in our AWS account, dedicated to hosting GitLab runners. However, since our team worked within the same time zone, these machines sat idle almost 16 hours per day, as most work was done during business hours. During the remaining 8 hours, the servers were often overloaded due to peak demand.</p>
 <h1>The Solution</h1>
