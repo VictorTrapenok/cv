@@ -14,7 +14,7 @@
             <guid>https://viktor-t.com/blog/12-Years-in-Open-Source</guid>
             <pubDate>Wed, 16 Oct 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[logo]]></description>
-            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-8565c1748d24c202d39025a129f25c7c.png" width="1280" height="720" class="img_ev3q"></p>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e202317c4e8df00ac054be00e6d05c3e.webp" width="1280" height="720" class="img_ev3q"></p>
 <p><em>(To summarize: approximately $8,000)</em></p>
 <p>At the beginning of 2012, I started working on <a href="https://github.com/CppComet/comet-server" target="_blank" rel="noopener noreferrer">my first open-source project</a>. It was a comet server written in C++.</p>
 <p>The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is pusher.com.</p>
@@ -48,7 +48,7 @@
             <guid>https://viktor-t.com/blog/karpenter-for-gitlabrunner</guid>
             <pubDate>Tue, 15 Oct 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[logo]]></description>
-            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e7760206565c65028bffe338aec6a2e7.png" width="721" height="406" class="img_ev3q"></p>
+            <content:encoded><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e82f6d71cb1b6a832578ceb2d0f0e3b0.webp" width="721" height="406" class="img_ev3q"></p>
 <p>I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.</p>
 <p>At Nanoheal, we have a high level of developer activity, and CI/CD pipelines runs a critical role in our DevOps practices for continuous delivery.</p>
 <p>Previously, we ran three powerful EC2 virtual machines in our AWS account, dedicated to hosting GitLab runners. However, since our team worked within the same time zone, these machines sat idle almost 16 hours per day, as most work was done during business hours. During the remaining 8 hours, the servers were often overloaded due to peak demand.</p>
