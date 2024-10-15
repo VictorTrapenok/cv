@@ -76,12 +76,12 @@ const config: Config = {
         //   position: "left",
         //   label: "Tutorial",
         // },
+        {
+          href: "https://viktor-t.com/mails/TrapenokViktor-CV.pdf",
+          label: "Resume",
+          position: "left",
+        },
         { to: "/blog", label: "Blog", position: "left" },
-        // {
-        //   href: "https://www.linkedin.com/in/victor-trapenok/",
-        //   label: "LinkedIn",
-        //   position: "right",
-        // },
         {
           type: "html",
           position: "right",
@@ -121,19 +121,23 @@ const config: Config = {
               label: "WhatsApp",
               href: "https://wa.me/79244269357",
             },
+            {
+              label: "Levhav@gmail.com",
+              href: "mailto:Levhav@gmail.com",
+            },
           ],
         },
         {
           title: "More",
           items: [
             {
-              label: "Blog",
+              label: "My blog",
               to: "/blog",
             },
-            // {
-            //   label: "GitHub",
-            //   href: "https://github.com/facebook/docusaurus",
-            // },
+            {
+              label: "My resume",
+              href: "https://viktor-t.com/mails/TrapenokViktor-CV.pdf",
+            },
           ],
         },
       ],
