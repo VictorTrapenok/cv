@@ -18,6 +18,7 @@ $ npm run dev
 ### Build
 
 ```
+$ nvm use v22
 $ npm run build
 ```
 
@@ -28,6 +29,7 @@ This command generates static content into the `build` directory and can be serv
 Using SSH:
 
 ```
+$ nvm use v22
 $ ./deploy.sh
 ```
 
