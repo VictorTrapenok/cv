@@ -5,7 +5,7 @@ authors: [viktor]
 tags: [Karpenter, GitLab, Kubernetes]
 ---
 
-![logo](logo.webp)
+![Reducing CI/CD infrastructure costs](logo.webp)
 
 I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.
 

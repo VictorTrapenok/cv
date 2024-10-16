@@ -122,6 +122,10 @@ const config: Config = {
               href: "https://wa.me/79244269357",
             },
             {
+              label: "Telegram",
+              href: "https://t.me/levhav",
+            },
+            {
               label: "Levhav@gmail.com",
               href: "mailto:Levhav@gmail.com",
             },
