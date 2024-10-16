@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkviktor_t=self.webpackChunkviktor_t||[]).push([[2379],{8420:t=>{t.exports=JSON.parse('{"tag":{"label":"E2E","permalink":"/blog/tags/e-2-e","allTagsPath":"/blog/tags","count":1,"unlisted":false},"listMetadata":{"permalink":"/blog/tags/e-2-e","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);

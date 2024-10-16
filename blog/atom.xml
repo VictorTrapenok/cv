@@ -12,8 +12,8 @@
         <id>https://viktor-t.com/blog/12-Years-in-Open-Source</id>
         <link href="https://viktor-t.com/blog/12-Years-in-Open-Source"/>
         <updated>2024-10-16T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[logo]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e202317c4e8df00ac054be00e6d05c3e.webp" width="1280" height="720" class="img_ev3q"></p>
+        <summary type="html"><![CDATA[12 Years in Open-Source]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="12 Years in Open-Source" src="https://viktor-t.com/assets/images/logo-e202317c4e8df00ac054be00e6d05c3e.webp" width="1280" height="720" class="img_ev3q"></p>
 <p><em>(To summarize: approximately $8,000)</em></p>
 <p>At the beginning of 2012, I started working on <a href="https://github.com/CppComet/comet-server" target="_blank" rel="noopener noreferrer">my first open-source project</a>. It was a comet server written in C++.</p>
 <p>The idea was simple: create a comet server with an API and a SaaS subscription service. The closest analogy is pusher.com.</p>
@@ -50,8 +50,8 @@
         <id>https://viktor-t.com/blog/karpenter-for-gitlabrunner</id>
         <link href="https://viktor-t.com/blog/karpenter-for-gitlabrunner"/>
         <updated>2024-10-15T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[logo]]></summary>
-        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="logo" src="https://viktor-t.com/assets/images/logo-e82f6d71cb1b6a832578ceb2d0f0e3b0.webp" width="721" height="406" class="img_ev3q"></p>
+        <summary type="html"><![CDATA[Reducing CI/CD infrastructure costs]]></summary>
+        <content type="html"><![CDATA[<p><img decoding="async" loading="lazy" alt="Reducing CI/CD infrastructure costs" src="https://viktor-t.com/assets/images/logo-e82f6d71cb1b6a832578ceb2d0f0e3b0.webp" width="721" height="406" class="img_ev3q"></p>
 <p>I want to share how we at Nanoheal reduced our infrastructure costs by using GitLab runners in Kubernetes with Karpenter on spot instances.</p>
 <p>At Nanoheal, we have a high level of developer activity, and CI/CD pipelines runs a critical role in our DevOps practices for continuous delivery.</p>
 <p>Previously, we ran three powerful EC2 virtual machines in our AWS account, dedicated to hosting GitLab runners. However, since our team worked within the same time zone, these machines sat idle almost 16 hours per day, as most work was done during business hours. During the remaining 8 hours, the servers were often overloaded due to peak demand.</p>
@@ -77,5 +77,57 @@
         <category label="Karpenter" term="Karpenter"/>
         <category label="GitLab" term="GitLab"/>
         <category label="Kubernetes" term="Kubernetes"/>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Integration Testing for Telegram Bots]]></title>
+        <id>https://viktor-t.com/blog/Testing-for-Telegram-Bots</id>
+        <link href="https://viktor-t.com/blog/Testing-for-Telegram-Bots"/>
+        <updated>2019-04-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is the text of my speech at the FAR EAST Devops DAYS conference]]></summary>
+        <content type="html"><![CDATA[<p>This is the text of my speech at the <a href="https://www.youtube.com/watch?v=QO2FQZCoggA&amp;t=105s" target="_blank" rel="noopener noreferrer">FAR EAST Devops DAYS conference</a>
+about my experience with <strong>integration testing for Telegram bots</strong>. Specifically, I’ll discuss the challenges and solutions I encountered when testing a Telegram bot that I inherited as part of a project.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/QO2FQZCoggA?si=6DjHPXJct4Yttc6c&amp;start=73" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-project-context">The Project Context<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#the-project-context" class="hash-link" aria-label="Direct link to The Project Context" title="Direct link to The Project Context">​</a></h2>
+<p>The bot was originally written in PHP using the <strong>MadelineProto</strong> library. For those unfamiliar with this library, it's quite versatile. It not only allows you to create traditional Telegram bots, but it also supports automating actions on behalf of user accounts, which opens up possibilities that regular bots don't offer, such as making audio calls.</p>
+<p>When I joined the project, the bot already had a significant amount of code. However, <strong>there were no tests</strong> whatsoever. As you can imagine, this was a major productivity bottleneck since I had to manually test the bot’s functionality at the end of each workday. Writing tests became my priority to speed up development.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="the-challenge-of-finding-existing-libraries">The Challenge of Finding Existing Libraries<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#the-challenge-of-finding-existing-libraries" class="hash-link" aria-label="Direct link to The Challenge of Finding Existing Libraries" title="Direct link to The Challenge of Finding Existing Libraries">​</a></h2>
+<p>My initial approach was to search for existing libraries that could facilitate the testing process. However, after some research, I found that most of the libraries available were written in <strong>Node.js</strong>, which wasn't ideal for my PHP-based bot. Integrating them would have taken considerable time and effort, and they wouldn’t have allowed me to test the bot directly through Telegram’s API.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="my-solution-testing-via-telegram-web">My Solution: Testing via Telegram Web<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#my-solution-testing-via-telegram-web" class="hash-link" aria-label="Direct link to My Solution: Testing via Telegram Web" title="Direct link to My Solution: Testing via Telegram Web">​</a></h2>
+<p>Given the limitations, I decided on a simpler approach: <strong>testing the bot through Telegram Web</strong>. By interacting with the bot via the web interface, I could simulate user actions like sending messages and clicking buttons. To achieve this, I wrote a small set of functions/scripts that automated these actions, which I’ll share with you later in this post.</p>
+<p>This approach was quite effective. The script would send messages to the bot, click buttons, and perform other necessary tasks, saving me hours of manual testing.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="how-it-works">How It Works<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#how-it-works" class="hash-link" aria-label="Direct link to How It Works" title="Direct link to How It Works">​</a></h2>
+<p>Here’s a brief overview of how the testing script operates:</p>
+<ol>
+<li><strong>Open Telegram Web</strong>.</li>
+<li><strong>Inject the testing script</strong> into the browser’s developer console.</li>
+<li>The script then automates interactions with the bot, simulating a real user.</li>
+</ol>
+<p>You can run the test, and while it’s running, you can relax with a cup of tea or work on something else. Once the test is completed, you get the results — whether the bot passed or if there were any issues.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="limitations">Limitations<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#limitations" class="hash-link" aria-label="Direct link to Limitations" title="Direct link to Limitations">​</a></h2>
+<p>The main drawback of this approach is that it <strong>doesn’t provide a full testing cycle</strong>. Ideally, I would integrate this with <strong>Selenium</strong> to run tests automatically from a console or CI/CD pipeline, but so far, I’ve encountered issues with authenticating in Telegram via Selenium.</p>
+<p>Another limitation is that Telegram has multiple platforms (iOS, Android, web), and they don’t always behave the same way. For example, the layout of messages may differ across platforms, which makes it hard to test the user experience consistently.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="key-benefits">Key Benefits<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#key-benefits" class="hash-link" aria-label="Direct link to Key Benefits" title="Direct link to Key Benefits">​</a></h2>
+<p>Despite its limitations, this was the <strong>quickest and easiest</strong> way to introduce some form of test automation into the project, which initially had none. It significantly improved our development speed and confidence in the bot’s functionality.</p>
+<p>Here’s a simple example of how you can test a scenario using the script:</p>
+<ol>
+<li><strong>Send a message</strong> to the bot.</li>
+<li><strong>Check the bot’s response</strong> for expected text.</li>
+<li><strong>Click a button</strong> in the bot’s response.</li>
+<li><strong>Wait for the next message</strong> and verify it.</li>
+</ol>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="future-plans">Future Plans<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#future-plans" class="hash-link" aria-label="Direct link to Future Plans" title="Direct link to Future Plans">​</a></h2>
+<p>One of my future goals is to integrate <strong>Selenium</strong> more effectively for even better automation. However, for now, this solution works, and it’s saving a lot of manual effort.</p>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="conclusion">Conclusion<a href="https://viktor-t.com/blog/Testing-for-Telegram-Bots#conclusion" class="hash-link" aria-label="Direct link to Conclusion" title="Direct link to Conclusion">​</a></h2>
+<p>To summarize, if you’re working on a Telegram bot and need a quick way to set up integration tests, testing through <strong>Telegram Web</strong> is a simple and effective solution. Although it doesn’t offer full coverage and automation, it’s a great starting point when no tests are in place.</p>
+<hr>
+<p>Feel free to ask any questions in the comments or reach out to me directly. Thank you for reading!</p>]]></content>
+        <author>
+            <name>Viktor Trapenok</name>
+            <uri>https://www.linkedin.com/in/victor-trapenok/</uri>
+        </author>
+        <category label="Integration-Testing" term="Integration-Testing"/>
+        <category label="E2E" term="E2E"/>
+        <category label="Telegram" term="Telegram"/>
+        <category label="Testing" term="Testing"/>
     </entry>
 </feed>
