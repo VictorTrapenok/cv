@@ -4,7 +4,7 @@ import type * as Preset from "@docusaurus/preset-classic";
 
 const config: Config = {
   title: "I'm searching new remote job",
-  tagline: "Full-time / Contract / C2C / Remote",
+  tagline: "Full-time / Part-time / Contract / C2C / Remote",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
